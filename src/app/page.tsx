@@ -4,7 +4,7 @@ import { Navigation } from "./_components/Navigation"
 import { Scroll } from "./_components/Scroll"
 import { HomeScreen } from "./_components/HomeScreen";
 import { Footer } from "./_components/Footer";
-import { MOVIE_ENDPOINT, options } from "@/constants/api";
+import { API_URL, options } from "@/constants/api";
 
 export default async function Home() {
 
