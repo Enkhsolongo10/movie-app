@@ -1,26 +1,17 @@
-import Image from "next/image";
-import { useState } from "react";
 import { Navigation } from "./_components/Navigation" 
-import { Scroll } from "./_components/Scroll"
-import { HomeScreen } from "./_components/HomeScreen";
+import { Section } from "./_components/Section";
 import { Footer } from "./_components/Footer";
-import { API_URL, options } from "@/constants/api";
-
-export default async function Home() {
-
- await fetch(`https://api.themoviedb.org/3/movie/top_rated?language=en-US&page=1`, options)
-  .then((response) => response.json())
-  .then((data)=> {
-    console.log(data.results) 
-  })
+import Image from "next/image";
 
 
+export default function Home() {
   return (
     <div>
       <Navigation />
-      <Scroll />
-      <HomeScreen />
+      <Section title="Popular" endpoint="popular"/>
+      <Section title="Upcoming" endpoint="upcoming"/>
+      <Section title="Top rated" endpoint="top_rated"/>
       <Footer />
     </div>
   );
-};     
+};      
