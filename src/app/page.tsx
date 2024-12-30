@@ -8,10 +8,10 @@ export default function Home() {
   return (
     <div>
       <Navigation />
-      <Section title="Popular" endpoint="popular"/>
       <Section title="Upcoming" endpoint="upcoming"/>
+      <Section title="Popular" endpoint="popular"/>
       <Section title="Top rated" endpoint="top_rated"/>
       <Footer />
     </div>
   );
-};      
+};      5
