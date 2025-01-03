@@ -19,3 +19,9 @@ export type Prop = {
     title: string;
     endpoint: string;
 };
+
+
+export type GenreType = {
+  id: number;
+  name: string;
+}; 
