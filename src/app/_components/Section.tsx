@@ -1,3 +1,4 @@
+'use client';
 import { Button } from '@/components/ui/button';
 import { MovieCard } from './MovieCard';
 import { Movie } from '@/constants/types';
